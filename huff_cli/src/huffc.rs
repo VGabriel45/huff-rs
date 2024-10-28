@@ -378,6 +378,8 @@ fn main() {
                 std::process::exit(1);
             }
 
+            println!("{}", Paint::green("✅ Compilation successful!"));
+
             if app.get_matches().is_present("interface") {
                 let mut interface: Option<String> = None;
                 if artifacts.len() == 1 {
